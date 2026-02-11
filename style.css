@@ -40,12 +40,29 @@ main {
 }
 
 .main-container {
-  max-width: 800px;
+  max-width: 1200px;
   width: 100%;
   margin: 13rem auto;
-  justify-content: space-between;
+}
+
+.main-text {
+  width: 300px;
+}
+
+.main-header {
+  line-height: 40px;
+}
+
+.main-text-description {
+  font-size: 11px;
+  line-height: 1.1rem;
+  margin-top: 1rem;
 }
 
 .content-container {
   display: flex;
+  justify-content: space-between;
+  width: 50%;
+  align-items: center;
+  margin: 0 auto;
 }
