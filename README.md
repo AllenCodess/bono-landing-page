@@ -1,2 +1,7 @@
 ## Bono Landing page
+
 This app is to practice css styles
+
+## Demo
+
+(Live Demo)[https://allencodess.github.io/bono-landing-page/]
