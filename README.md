@@ -6,7 +6,7 @@ This app is to practice css styles
 
 [Live Demo](https://allencodess.github.io/bono-landing-page/)
 
-![Screenshot](Screenshot.pngpng)
+![Screenshot](Screenshot.png)
 
 ## Features
 
