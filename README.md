@@ -4,4 +4,17 @@ This app is to practice css styles
 
 ## Demo
 
-(Live Demo)[https://allencodess.github.io/bono-landing-page/]
+[Live Demo](https://allencodess.github.io/bono-landing-page/)
+
+![Screenshot](Screenshot.pngpng)
+
+## Features
+
+- None just static site
+
+## Built With
+
+- HTML
+- CSS
+
+## How to Use N/A
