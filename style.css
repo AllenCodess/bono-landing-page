@@ -8,8 +8,9 @@ body {
   font-family: "Open Sans", sans-serif;
   background: linear-gradient(to bottom, rgba(255, 64, 50, 0.8), rgba(71, 17, 116, 0.9)), url(/images/background.jpg);
   background-repeat: no-repeat;
-  height: 100vh;
+  min-height: 100vh;
   background-position: center;
+  background-size: cover;
 }
 
 .container {
@@ -49,7 +50,8 @@ main {
 .main-container {
   max-width: 1200px;
   width: 50%;
-  margin: 13rem auto;
+  margin: 0 auto;
+  padding: 13rem 0;
 }
 
 .main-text {
@@ -74,8 +76,8 @@ main {
   display: flex;
   width: 100%;
   align-items: center;
-  margin: 0 auto;
   gap: 2rem;
+  margin-left: 5rem;
 }
 
 .form-group {
@@ -120,4 +122,98 @@ textarea {
   border-radius: 8px;
   font-size: 11px;
   cursor: pointer;
+}
+
+/* 
+
+
+media queries
+
+*/
+
+@media (max-width: 1795px) {
+  .main-container {
+    max-width: 1000px;
+    width: 90%;
+  }
+}
+
+@media (max-width: 810px) {
+  body {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+  }
+
+  .main-container {
+    padding: 0;
+  }
+}
+@media (max-width: 768px) {
+  .main-container {
+    width: 90%; /* take most of the screen */
+    margin: 10rem auto; /* centers horizontally */
+  }
+
+  .content-container {
+    flex-direction: column-reverse; /* form on top, text below */
+    margin-left: 0; /* remove left margin */
+    gap: 2rem; /* spacing between form and text */
+    align-items: center; /* center both form and text */
+    justify-content: center;
+  }
+
+  .main-text {
+    margin-top: 0; /* remove negative margin */
+    margin-right: 0; /* remove right margin */
+    width: 100%;
+    text-align: center; /* center the text inside */
+  }
+
+  .input-content-container {
+    width: 100%; /* form full width */
+  }
+
+  body {
+    height: 100%;
+  }
+
+  .main-header,
+  .main-text-description {
+    margin: 0 auto;
+    width: 60%;
+  }
+
+  form {
+    text-align: center;
+  }
+
+  .header-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .list {
+    flex-direction: column;
+  }
+
+  .list-items {
+    padding: 8px;
+  }
+}
+
+@media (max-width: 544px) {
+  .input-content-container {
+    width: 100%; /* form full width */
+  }
+
+  .main-header {
+    width: 100%;
+    font-size: 30px;
+  }
+
+  .main-text-description {
+    width: 75%;
+    margin-top: 1rem;
+  }
 }
